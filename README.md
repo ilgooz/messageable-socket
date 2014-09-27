@@ -18,9 +18,9 @@ socket.on('message', function(a, b, c, d){
 ```
 
 ## Examples
-Note that you can send messages and receive them from both side.
+*Note that you can send messages and receive them from both side.*
 
-Server
+**Server**
 ```javascript
 var net = require('net');
 var MSocket = require('messageable-socket');
@@ -34,7 +34,7 @@ var server = net.createServer(connection);
 server.listen(3000);
 ```
 
-Client
+**Client**
 ```javascript
 var net = require('net');
 var MSocket = require('messageable-socket');
