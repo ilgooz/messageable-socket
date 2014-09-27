@@ -13,6 +13,7 @@ var socket = MSocket(socket);
 socket.send(1, 'messageable', {a: 2}, ['3', 'socket']);
 socket.on('message', function(a, b, c, d){
     console.log(a, b, c, d);
+    // returns 1, 'messageable', {a: 2}, ['3', 'socket']
 });
 ```
 
@@ -39,6 +40,7 @@ var MSocket = require('messageable-socket');
 var socket = MSocket(net.connect(3000));
 socket.on('message', function(message){
     console.log(message);
+    // returns 'a message content'
 });
 ```
 
