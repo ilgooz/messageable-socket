@@ -13,11 +13,13 @@ var socket = MSocket(socket);
 socket.send(1, 'messageable', {a: 2}, ['3', 'socket']);
 socket.on('message', function(a, b, c, d){
     console.log(a, b, c, d);
-    // returns 1, 'messageable', {a: 2}, ['3', 'socket']
+    // returns: 1, 'messageable', {a: 2}, ['3', 'socket']
 });
 ```
 
 ## Examples
+Note that you can send messages and receive them from both side.
+
 Server
 ```javascript
 var net = require('net');
@@ -40,8 +42,6 @@ var MSocket = require('messageable-socket');
 var socket = MSocket(net.connect(3000));
 socket.on('message', function(message){
     console.log(message);
-    // returns 'a message content'
+    // returns: 'a message content'
 });
 ```
-
-Of course you can also send messages from client and receive them on server.
