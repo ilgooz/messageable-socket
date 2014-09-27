@@ -1,6 +1,6 @@
 {
   "name": "messageable-socket",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "author": "İlker Göktuğ Öztürk <ilkergoktugozturk@gmail.com>",
   "description": "Give high level messaging capability to nodejs native net package sockets",
   "keywords": [
