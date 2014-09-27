@@ -1,6 +1,5 @@
 var Message = require('amp-message');
 var Parser = require('amp').Stream;
-var extend = require('extend');
 
 module.exports = MSocket;
 
