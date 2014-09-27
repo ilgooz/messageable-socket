@@ -1,10 +1,12 @@
-## Messageable Socket
+# Messageable Socket
 This module gives you a `socket.send()` and `socket.on('message')` capabilities to your socket.
 
-# Installation
-`npm install messageable-socket`
+## Installation
+```
+npm install messageable-socket
+```
 
-# Usage
+## Usage
 ```
 var socket = MSocket(socket);
 socket.send(1, 'messageable', {a: 2}, ['3', 'socket']);
@@ -13,7 +15,7 @@ socket.on('message', function(int, string, object, array){
 });
 ```
 
-# Examples
+## Examples
 Server
 ```
 var net = require('net');
