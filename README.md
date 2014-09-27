@@ -11,8 +11,8 @@ npm install messageable-socket
 var socket = MSocket(socket);
 
 socket.send(1, 'messageable', {a: 2}, ['3', 'socket']);
-socket.on('message', function(int, string, object, array){
-    console.log(int, string, object, array);
+socket.on('message', function(a, b, c, d){
+    console.log(a, b, c, d);
 });
 ```
 
